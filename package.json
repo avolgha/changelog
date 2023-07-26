@@ -1,0 +1,44 @@
+{
+  "name": "@avolgha/changelog",
+  "version": "1.0.0",
+  "description": "",
+  "packageManager": "pnpm@8.1.1",
+  "bin": "dist/changelog.cjs.js",
+  "main": "dist/changelog.cjs.js",
+  "module": "dist/changelog.esm.js",
+  "types": "dist/types/main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avolgha/changelog.git"
+  },
+  "author": "avolgha (github.com/avolgha) <avolgha@gmail.com>",
+  "license": "BSD-3 Clause Clear",
+  "bugs": {
+    "url": "https://github.com/avolgha/changelog/issues"
+  },
+  "homepage": "https://github.com/avolgha/changelog",
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.2",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.15.11",
+    "@types/semver": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.35.0",
+    "rollup": "^3.18.0",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "bundle": "rollup -c",
+    "watch": "rollup -cw",
+    "lint": "eslint src/"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "semver": "^7.5.4"
+  }
+}
